@@ -1,0 +1,64 @@
+{
+    "actions": [],
+    "creation": "2024-01-17 14:31:14.561977",
+    "doctype": "DocType",
+    "editable_grid": 1,
+    "engine": "InnoDB",
+    "field_order": [
+     "user",
+     "signature_position",
+     "document_status",
+     "signed_pdf",
+     "signing_date_and_time",
+     "emsigner_response"
+    ],
+    "fields": [
+     {
+      "fieldname": "user",
+      "fieldtype": "Link",
+      "in_list_view": 1,
+      "label": "User",
+      "options": "User"
+     },
+     {
+      "fieldname": "signature_position",
+      "fieldtype": "Data",
+      "in_list_view": 1,
+      "label": "Signature Position"
+     },
+     {
+      "fieldname": "document_status",
+      "fieldtype": "Select",
+      "in_list_view": 1,
+      "label": "Status",
+      "options": "\nPending\nSigned"
+     },
+     {
+      "fieldname": "signed_pdf",
+      "fieldtype": "Attach",
+      "label": "Signed PDF"
+     },
+     {
+      "fieldname": "signing_date_and_time",
+      "fieldtype": "Datetime",
+      "label": "Signing Date and Time"
+     },
+     {
+      "fieldname": "emsigner_response",
+      "fieldtype": "Text",
+      "label": "emSigner Response"
+     }
+    ],
+    "index_web_pages_for_search": 1,
+    "istable": 1,
+    "links": [],
+    "modified": "2021-10-20 14:31:14.561977",
+    "modified_by": "Administrator",
+    "module": "Docusign Integration",
+    "name": "Digital Signature Signatory",
+    "owner": "Administrator",
+    "permissions": [],
+    "sort_field": "modified",
+    "sort_order": "DESC",
+    "track_changes": 1
+   }

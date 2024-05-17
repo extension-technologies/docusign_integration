@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include docusign_integration *.css
+recursive-include docusign_integration *.csv
+recursive-include docusign_integration *.html
+recursive-include docusign_integration *.ico
+recursive-include docusign_integration *.js
+recursive-include docusign_integration *.json
+recursive-include docusign_integration *.md
+recursive-include docusign_integration *.png
+recursive-include docusign_integration *.py
+recursive-include docusign_integration *.svg
+recursive-include docusign_integration *.txt
+recursive-exclude docusign_integration *.pyc

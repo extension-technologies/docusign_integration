@@ -1,0 +1,146 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "D-PI-.####",
+ "creation": "2024-04-25 11:54:57.200776",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "document_type",
+  "document",
+  "status",
+  "print_format",
+  "column_break",
+  "pdf_document",
+  "amended_from",
+  "workflow_state",
+  "workflow",
+  "code",
+  "previous_state",
+  "section_break",
+  "documents",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "document_type",
+   "fieldtype": "Link",
+   "label": "Document Type",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "document",
+   "fieldtype": "Dynamic Link",
+   "label": "Document",
+   "options": "document_type"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nPending\nPartially Signed\nCompleted\nCancelled"
+  },
+  {
+   "fieldname": "print_format",
+   "fieldtype": "Link",
+   "label": "Print Format",
+   "options": "Print Format"
+  },
+  {
+   "fieldname": "column_break",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "pdf_document",
+   "fieldtype": "Attach",
+   "label": "PDF Document"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "options": "DSC Purchase Invoice",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "workflow_state",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Workflow state",
+   "no_copy": 1
+  },
+  {
+   "fieldname": "workflow",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Workflow"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "code",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "Code"
+  },
+  {
+   "fieldname": "previous_state",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Previous State",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break",
+   "fieldtype": "Section Break",
+   "label": "Other"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "documents",
+   "fieldtype": "Table",
+   "label": "Documents",
+   "no_copy": 1,
+   "options": "Digital Signature Signed Document"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "DSC Purchase Invoice",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-04-25 11:54:57.200776",
+ "modified_by": "Administrator",
+ "module": "Docusign Integration",
+ "name": "DSC Purchase Invoice",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
