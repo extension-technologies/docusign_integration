@@ -11,7 +11,7 @@ This custom app enables seamless integration between Frappe ERPNext and Docusign
 2. Install the Docusign custom app.  <p>After get the app install in your site </p>
 
     ```bash
-    bench get-app --branch [branch name] https://labs.extensionerp.com/sonu/docusign-integration.git
+    bench get-app --branch [branch name] https://github.com/extension-technologies/docusign_integration.git
     ```
     
     ```bash
