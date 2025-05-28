@@ -58,6 +58,8 @@ This custom app enables seamless integration between Frappe ERPNext and Docusign
 
 4. Trigger Event Setup <br>
     <img src="./asset/triggerevent.png" >
+5. Include Document & Attachement
+    <img src="./asset/include_data.png">
 
 
 ## Erpnext Configuration
